@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "7571d2d4-bc58-4ee7-87f9-42d142b3cdf8",
+		"name": "CurdDbApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetByEmail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://curd-db-api.herokuapp.com/authors/sath.chawla@gmail.com",
+					"protocol": "http",
+					"host": [
+						"curd-db-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authors",
+						"sath.chawla@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 102,\r\n    \"firstName\": \"Sarthak\",\r\n    \"lastName\": \"Chawla\",\r\n    \"email\":\"sarth.chawla@gmail.com\",\r\n    \"birthdate\": \"2017-09-29T00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://curd-db-api.herokuapp.com/authors/",
+					"protocol": "http",
+					"host": [
+						"curd-db-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by Email",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://curd-db-api.herokuapp.com/authors/sath.chawla@gmail.com",
+					"protocol": "http",
+					"host": [
+						"curd-db-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authors",
+						"sath.chawla@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Author",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 102,\r\n    \"firstName\": \"Raghav\",\r\n    \"lastName\": \"Chawla\",\r\n    \"email\": \"sarth.chawla@gmail.com\",\r\n    \"birthdate\": \"2017-09-29T00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://curd-db-api.herokuapp.com/authors/",
+					"protocol": "http",
+					"host": [
+						"curd-db-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"authors",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
